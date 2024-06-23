@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjqgd3ph5f7fh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7ccu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mtqdc"]
+
+[sub_resource type="Skin" id="Skin_wmr1i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kp63s"]
+
+[node name="cube" type="RigidBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_w7ccu")
+mesh = SubResource("BoxMesh_mtqdc")
+skin = SubResource("Skin_wmr1i")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0226308, -0.0161102, 0.0223918)
+shape = SubResource("BoxShape3D_kp63s")

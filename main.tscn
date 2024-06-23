@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxfiydhmvdnd8"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_wswxn"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_wswxn")
+
+[node name="Camera3D" type="Camera3D" parent="." groups=["Light"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.909724, 2.83253)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." groups=["Light"]]
