@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhhsxql0db531"]
+
+[ext_resource type="PackedScene" uid="uid://bmsedrag4405k" path="res://ui_demo/game_form.tscn" id="1_kof2l"]
+
+[node name="main" type="Node3D"]
+
+[node name="GameForm" parent="." instance=ExtResource("1_kof2l")]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4i0rtxkrcmnt"]
+
+[ext_resource type="Script" path="res://res_demo_main.gd" id="1_a4sb4"]
+[ext_resource type="Resource" uid="uid://wuvnwervfln6" path="res://ResDemo/res_demo.tres" id="2_unnuo"]
+
+[node name="main" type="Node3D"]
+
+[node name="res_demo" type="Node3D" parent="."]
+script = ExtResource("1_a4sb4")
+res_demo = ExtResource("2_unnuo")

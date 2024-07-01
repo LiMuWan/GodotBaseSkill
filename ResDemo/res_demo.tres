@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResDemo" load_steps=2 format=3 uid="uid://wuvnwervfln6"]
+
+[ext_resource type="Script" path="res://ResDemo/ResDemo.gd" id="1_rgwaw"]
+
+[resource]
+script = ExtResource("1_rgwaw")
+health = 100
+damage = 2

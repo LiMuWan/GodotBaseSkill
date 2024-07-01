@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmsedrag4405k"]
+
+[ext_resource type="Script" path="res://ui_demo/game_form.gd" id="1_uq471"]
+
+[node name="GameForm" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.5
+offset_top = -323.0
+offset_right = 576.5
+offset_bottom = 323.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uq471")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = -57.0
+offset_right = 170.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="label_score" type="Label" parent="MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "分数"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="btn_deduct" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 1
+offset_left = 198.5
+offset_top = 275.0
+offset_right = 398.5
+offset_bottom = 355.0
+theme_override_font_sizes/font_size = 30
+text = "-"
+
+[node name="btn_add" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 1
+offset_left = 796.5
+offset_top = 278.0
+offset_right = 996.5
+offset_bottom = 358.0
+theme_override_font_sizes/font_size = 30
+text = "+"

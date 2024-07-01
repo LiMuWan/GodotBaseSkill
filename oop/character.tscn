@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://boxfaxqnlfwyl"]
+
+[ext_resource type="Script" path="res://oop/main_character.gd" id="1_nxl17"]
+[ext_resource type="Script" path="res://oop/character.gd" id="1_qh8xj"]
+[ext_resource type="Script" path="res://oop/enemy.gd" id="3_q6mep"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_nxl17")
+
+[node name="character" type="CharacterBody2D" parent="."]
+script = ExtResource("1_qh8xj")
+
+[node name="enemy" type="CharacterBody2D" parent="."]
+script = ExtResource("3_q6mep")

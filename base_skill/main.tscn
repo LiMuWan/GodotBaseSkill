@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dxfiydhmvdnd8"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_wswxn"]
+[ext_resource type="Script" path="res://base_skill/main.gd" id="1_wswxn"]
 
 [node name="main" type="Node3D"]
 script = ExtResource("1_wswxn")
